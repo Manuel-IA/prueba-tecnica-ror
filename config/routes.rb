@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   scope module: 'api' do
     namespace :v1 do
-      get '/products', to: 'products#index'
+      resources :products, only: %i[index show]
     end
   end
 end
