@@ -1,24 +1,28 @@
-# README
+# [Virtual Shop](https://dragon.virtualshop.c66.me/v1/products) #
+Test for Ruby On Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## How do I get set up? ##
 
-Things you may want to cover:
+This application is powered by [Ruby on Rails](https://rubyonrails.org).
 
-* Ruby version
+### System dependencies ###
 
-* System dependencies
+System running the app must have:
 
-* Configuration
+- Ruby 3.1.2
+- Rails 7.0.4.3
+- PostgreSQL >= 12
 
-* Database creation
+### App code and dependencies ###
 
-* Database initialization
+To get app code and its required libraries:
 
-* How to run the test suite
+- clone `git@github.com:Manuel-IA/prueba-tecnica-ror.git` repository
+- `cd` into the new directory then `bundle install` to install app dependencies from rubygems
 
-* Services (job queues, cache servers, search engines, etc.)
+### Database configuration ###
 
-* Deployment instructions
+The app relies on a database to store and retrieve its data:
 
-* ...
+- set credentials for databases in `config/database.yml`
+- run `bin/rails db:setup`
